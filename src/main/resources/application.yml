@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/policyManagements
         - id: advertising
-          uri: http://advert:8080
+          uri: http://advertising:8080
           predicates:
             - Path=/advertisingSystems
       globalcors:
