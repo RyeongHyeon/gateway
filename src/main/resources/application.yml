@@ -26,6 +26,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/policyManagements
+        - id: advertising
+          uri: http://localhost:8085
+          predicates:
+            - Path=/advertisingSystems
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -63,6 +67,10 @@ spring:
           uri: http://policy:8080
           predicates:
             - Path=/policyManagements
+        - id: advertising
+            uri: http://advert:8080
+            predicates:
+              - Path=/advertisingSystems
       globalcors:
         corsConfigurations:
           '[/**]':
